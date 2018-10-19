@@ -13,4 +13,4 @@ docker-compose down -v --remove-orphans
 
 docker network prune
 
-docker-compose up -d
+docker-compose up --scale  ignite-server=2 --scale  ignite-client=3 -d

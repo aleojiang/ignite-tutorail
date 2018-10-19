@@ -5,5 +5,4 @@ ignite:
   clientMode: true
   serverIpAddresses:
 #  - localhost:47500
-  - 172.22.0.101:47500
-  - 172.22.0.102:47500
+  - ignite-server:47500

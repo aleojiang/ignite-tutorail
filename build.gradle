@@ -41,7 +41,10 @@ subprojects {
     }
 
     dependencies {
-        compile "org.apache.ignite:ignite-core:${igniteVersion}"
+//        compile "org.apache.ignite:ignite-core:${igniteVersion}"
+
+        // https://mvnrepository.com/artifact/javax.cache/cache-api
+        compile group: 'javax.cache', name: 'cache-api', version: '1.1.0'
 
         compile 'org.springframework.boot:spring-boot-starter-actuator'
         compile 'de.codecentric:spring-boot-admin-starter-client'

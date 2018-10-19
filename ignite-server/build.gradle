@@ -1,2 +1,3 @@
 dependencies {
+    compile files('/Users/patrickjiang/opensource/ignite/modules/core/target/ignite-core-2.7.0-SNAPSHOT.jar')
 }

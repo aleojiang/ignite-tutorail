@@ -5,8 +5,12 @@ dependencies {
     compile "org.eclipse.jetty:jetty-webapp:9.+"
     compile "org.eclipse.jetty:jetty-jsp:9.+"
 
-    compile("org.apache.ignite:ignite-spring:${igniteVersion}")
-    compile("org.apache.ignite:ignite-slf4j:${igniteVersion}")
+    compile files('/Users/patrickjiang/opensource/ignite/modules/core/target/ignite-core-2.7.0-SNAPSHOT.jar')
+    compile files('/Users/patrickjiang/opensource/ignite/modules/slf4j/target/ignite-slf4j-2.7.0-SNAPSHOT.jar')
+    compile files('/Users/patrickjiang/opensource/ignite/modules/spring/target/ignite-spring-2.7.0-SNAPSHOT.jar')
+
+//    compile("org.apache.ignite:ignite-spring:${igniteVersion}")
+//    compile("org.apache.ignite:ignite-slf4j:${igniteVersion}")
     compile("com.h2database:h2:1.4.195")
 
     compile "io.springfox:springfox-swagger2:${swaggerVersion}"
