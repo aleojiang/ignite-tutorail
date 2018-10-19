@@ -4,9 +4,6 @@
     <asm skipDebug="true" skipFrames="true" skipCode="false" expandFrames="true" />
     <groovy codeStyle="GROOVIFIER_0_2_0" />
   </component>
-  <component name="EmacsSettings">
-    <option name="emacsPath" value="/usr/bin/emacs" />
-  </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="MarkdownProjectSettings" wasCopied="true">
     <PreviewSettings splitEditorLayout="FIRST" splitEditorPreview="PREVIEW" useGrayscaleRendering="false" zoomFactor="1.0" maxImageWidth="0" showGitHubPageIfSynced="false" allowBrowsingInPreview="false" synchronizePreviewPosition="true" highlightPreviewType="LINE" highlightFadeOut="5" highlightOnTyping="true" synchronizeSourcePosition="true" verticallyAlignSourceAndPreviewSyncPosition="true" showSearchHighlightsInPreview="true" showSelectionInPreview="true" openRemoteLinks="true" replaceUnicodeEmoji="false" lastLayoutSetsDefault="false">
@@ -83,10 +80,7 @@
       <textMaps />
     </LinkMapSettings>
   </component>
-  <component name="ProjectDictionaryState">
-    <dictionary name="patrickjiang" />
-  </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" project-jdk-name="1.8.0_112" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8.0_112" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

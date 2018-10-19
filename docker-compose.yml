@@ -1,0 +1,47 @@
+version: '3'
+services:
+  ignite-server_1:
+    build: ./ignite-server
+    environment:
+      JAVA_OPTS: -Xmx128m
+    networks:
+      service1_net:
+        ipv4_address: 172.22.0.101
+  ignite-server_2:
+    build: ./ignite-server
+    environment:
+      JAVA_OPTS: -Xmx128m
+    networks:
+      service1_net:
+        ipv4_address: 172.22.0.102
+
+  ignite-client_1:
+    build: ./ignite-client
+    environment:
+      JAVA_OPTS: -Xmx128m
+    networks:
+      service1_net:
+        ipv4_address: 172.22.0.201
+
+  ignite-client_2:
+    build: ./ignite-client
+    environment:
+      JAVA_OPTS: -Xmx128m
+    networks:
+      service1_net:
+        ipv4_address: 172.22.0.202
+
+  ignite-client_3:
+    build: ./ignite-client
+    environment:
+      JAVA_OPTS: -Xmx128m
+    networks:
+      service1_net:
+        ipv4_address: 172.22.0.203
+
+networks:
+  service1_net:
+    ipam:
+      driver: default
+      config:
+      - subnet: 172.22.0.0/16

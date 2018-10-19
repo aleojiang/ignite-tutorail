@@ -1,2 +1,4 @@
 rootProject.name = 'IgniteTestApp'
+include 'ignite-server'
+include 'ignite-client'
 

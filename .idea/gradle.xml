@@ -8,6 +8,8 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/ignite-client" />
+            <option value="$PROJECT_DIR$/ignite-server" />
           </set>
         </option>
       </GradleProjectSettings>

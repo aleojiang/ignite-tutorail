@@ -1,0 +1,6 @@
+
+ignite:
+  clientMode: false
+  serverIpAddresses:
+  - 172.22.0.100:47500
+  - 172.22.0.101:47500

@@ -1,0 +1,9 @@
+
+ignite:
+  clientFailureTimeout: 15000
+  failureTimeout: 5000
+  clientMode: true
+  serverIpAddresses:
+#  - localhost:47500
+  - 172.22.0.101:47500
+  - 172.22.0.102:47500
