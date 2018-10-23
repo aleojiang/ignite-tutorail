@@ -5,4 +5,4 @@ ignite:
   clientMode: true
   serverIpAddresses:
 #  - localhost:47500
-  - ignite-server:47500
+  - igsc:47500

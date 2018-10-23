@@ -8,7 +8,7 @@ services:
   ignite-client:
     build: ./ignite-client
     links:
-      - "ignite-server"
+      - "ignite-server:igsc"
     environment:
       JAVA_OPTS: -Xmx128m
 

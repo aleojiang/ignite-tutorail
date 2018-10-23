@@ -23,5 +23,9 @@ docker exec -it [container_id] bash
 then try this
 docker exec -ti [container_id] /bin/sh
 
+## list docker networks
+docker network ls
+
+
 
  
