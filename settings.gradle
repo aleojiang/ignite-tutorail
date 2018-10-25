@@ -1,4 +1,6 @@
 rootProject.name = 'IgniteTestApp'
 include 'ignite-server'
 include 'ignite-client'
+include 'springbootdatajpa'
+include 'reactive-spboot2-employee-service'
 

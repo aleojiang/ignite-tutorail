@@ -1,25 +1,46 @@
 buildscript {
     ext {
-        springBootVersion="2.0.3.RELEASE"
+        springBootVersion = "2.0.3.RELEASE"
     }
-    
+
     repositories {
         mavenCentral()
-        maven { url "https://repo.spring.io/plugins-release" }
-        maven { url "https://repo.spring.io/libs-release" }
+        jcenter()
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+        maven { 
+            url "https://repo.spring.io/plugins-release" 
+        }
+        maven { 
+            url "https://repo.spring.io/libs-release" 
+        }
     }
-    
+
     dependencies {
-        classpath "org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}"
+        classpath "io.franzbecker:gradle-lombok:1.14"
+        classpath "org.springframework.boot:spring-boot-gradle-plugin:$springBootVersion"
     }
 
 }
 
+//plugins {
+//    id 'io.franzbecker.gradle-lombok' version '1.14'
+//    id 'java'
+//}
+
+
 subprojects {
+    apply plugin: "io.franzbecker.gradle-lombok"
     apply plugin: "java"
     apply plugin: 'org.springframework.boot'
     apply plugin: "io.spring.dependency-management"
 
+    lombok {
+        version = '1.18.2'
+        sha256 = ""
+    }
+    
     group 'pjiang.tutorial'
     version '1.0-SNAPSHOT'
 
@@ -30,7 +51,8 @@ subprojects {
         springBootAdminVersion = '2.0.3'
         springCloudVersion = 'Finchley.SR1'
         igniteVersion = '2.6.0'
-        swaggerVersion = "2.4.0"
+        swaggerVersion = "2.8.0"
+        lomBokVersion = "1.18.2"
     }
 
     repositories {
@@ -41,18 +63,13 @@ subprojects {
     }
 
     dependencies {
-//        compile "org.apache.ignite:ignite-core:${igniteVersion}"
-
-        // https://mvnrepository.com/artifact/javax.cache/cache-api
-        compile group: 'javax.cache', name: 'cache-api', version: '1.1.0'
-
         compile 'org.springframework.boot:spring-boot-starter-actuator'
         compile 'de.codecentric:spring-boot-admin-starter-client'
 
-        annotationProcessor "org.springframework.boot:spring-boot-configuration-processor"
-        compileOnly "org.springframework.boot:spring-boot-configuration-processor"
-    
-        
+//        annotationProcessor "org.springframework.boot:spring-boot-configuration-processor"
+//        compileOnly "org.springframework.boot:spring-boot-configuration-processor"
+
+
     }
 
     dependencyManagement {
@@ -61,7 +78,6 @@ subprojects {
             mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
         }
     }
-
 
 
 }

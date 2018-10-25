@@ -11,5 +11,12 @@
       <entry name="!?*.kt" />
       <entry name="!?*.clj" />
     </wildcardResourcePatterns>
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="IgniteTestApp_main" target="1.8" />
+      <module name="IgniteTestApp_test" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

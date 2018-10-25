@@ -10,6 +10,8 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/ignite-client" />
             <option value="$PROJECT_DIR$/ignite-server" />
+            <option value="$PROJECT_DIR$/reactive-spboot2-employee-service" />
+            <option value="$PROJECT_DIR$/springbootdatajpa" />
           </set>
         </option>
       </GradleProjectSettings>
